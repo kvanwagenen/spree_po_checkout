@@ -2,4 +2,8 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  spree:
+    po_checkout:
+      mark_as_paid: Mark as Paid
+      successfully_marked_paid: Successfully Marked Paid
+    can_order_with_po: Can Place Order with PO
