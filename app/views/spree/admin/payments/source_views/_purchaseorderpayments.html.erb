@@ -1,0 +1,9 @@
+<h3>PO #: <%= @payment.source.po_number %></h3>
+<br>
+<h4>Payment status: <%= @payment.source.paid ? "Received" : "Not received" %></h4>
+<br>
+<% if !payment.source.paid %>
+  <%= form_for(@payment, :as => :post, :url => spree.po_paid_admin_order_payment_path(@order, payment)) do %>
+  	<%= submit_tag Spree.t(:mark_as_paid, :scope => :po_checkout) %>
+  <% end %>
+<% end %>

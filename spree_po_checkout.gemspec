@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.description = 'Allows permitted users to checkout with a PO number'
   s.required_ruby_version = '>= 1.9.3'
 
-  # s.author    = 'You'
+  s.author    = 'Kyle Van Wagenen'
   # s.email     = 'you@example.com'
   # s.homepage  = 'http://www.spreecommerce.com'
 
