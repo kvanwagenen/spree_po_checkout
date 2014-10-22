@@ -7,7 +7,7 @@ module Spree
     def authorize(amount, source, gateway_options)
       order_number = gateway_options[:order_id][/(\w+)-/,1]
       order = Order.find_by_number(order_number)
-      if order && order.user && order.user.can_order_with_po
+      if order
         order.po_number = source.po_number
         order.save
         return OpenStruct.new({:success? => true})
