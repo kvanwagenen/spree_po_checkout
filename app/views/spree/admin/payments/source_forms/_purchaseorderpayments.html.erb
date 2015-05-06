@@ -1,0 +1,5 @@
+<fieldset class="no-border-bottom">
+  <% param_prefix = "payment_source[#{payment_method.id}]" %>
+  <%= label_tag nil, "PO Number" %>
+  <%= text_field_tag "#{param_prefix}[po_number]", '', :class => 'required', :autocomplete => "off" %>
+</fieldset>
