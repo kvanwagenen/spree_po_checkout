@@ -1,7 +1,6 @@
 module Spree
   class PurchaseOrderCheckout < ActiveRecord::Base
     belongs_to :payment
-    attr_accessible :po_number, :paid
 
     after_save :update_order_po
 

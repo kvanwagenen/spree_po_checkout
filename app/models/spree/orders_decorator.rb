@@ -1,5 +1,4 @@
 Spree::Order.class_eval do
-  attr_accessible :po_number
 
   alias_method :orig_available_payment_methods, :available_payment_methods
 
