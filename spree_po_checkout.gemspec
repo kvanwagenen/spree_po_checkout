@@ -2,10 +2,10 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_po_checkout'
-  s.version     = '2.4.0'
+  s.version     = '3.0.0'
   s.summary     = 'Allows permitted users to checkout with a PO number'
   s.description = 'Allows permitted users to checkout with a PO number'
-  s.required_ruby_version = '>= 1.9.3'
+  s.required_ruby_version = '>= 2.1.0'
 
   s.author    = 'Kyle Van Wagenen'
   # s.email     = 'you@example.com'
@@ -16,8 +16,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 2.4'
-  s.add_dependency 'spree_api_extend', '~> 2.4'
+  s.add_dependency 'spree_core', '~> 3.0.0'
 
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'coffee-rails'
